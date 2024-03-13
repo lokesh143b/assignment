@@ -1,0 +1,55 @@
+.bg-container{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    padding: 10px;
+}
+.mainContainer {
+    background-color: #ffffff;
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+  }
+  
+  
+  .title{
+    color: #000000;
+    font-size: 26px;
+    font-weight: 700;
+  }
+  .form-container{
+    height: 100%;
+    width: 100%;
+  }
+
+  .inputContainer {
+    width: 90% !important;
+    margin-bottom: 20px;
+  
+  }
+  .label{
+    color: #000000;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin-bottom: 8px;
+  }
+  
+  .input{
+    height: 40px !important;
+    font-size: 16px !important;
+  }
+
+  .error-message{
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .inputButton {
+    width: 220px;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    
+  }
