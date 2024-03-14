@@ -1,13 +1,17 @@
 import './index.css'
-import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.css'; 
 
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
+
 
 const Login = (props) => {
   const [email, setEmail] = useState('');
   const [emailError, setEmailError] = useState('');
   const [password, setPassword] = useState('');
   const [passwordError, setPasswordError] = useState(''); 
+  const navigate = useNavigate();
 
 
   const onButtonClick = (e) => {
@@ -33,9 +37,12 @@ const Login = (props) => {
       return;
     }
 
+    if(email !== "" && password !== "" && password.length > 7){
+      navigate("/jokes", { replace: true })
+    }
     // Authentication calls will be made here...
   }
-
+ 
   return (
     <div className='bg-container d-flex flex-column justify-content-center align-items-center'>
         <div className='mainContainer pt-4 d-flex flex-column justify-content-center align-items-center'>
